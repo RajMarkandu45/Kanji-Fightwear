@@ -58,11 +58,164 @@
   }
   .hero a {
     display: inline-block;
-    margin-top: 1
+    margin-top: 15px;
+    padding: 12px 28px;
+    background: #222;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 6px;
+  }
+  .hero a:hover {
+    background: #333;
+  }
 
+  /* Promo banners */
+  .promo-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px 20px;
+  }
+  .promo {
+    background: #111;
+    flex: 1;
+    min-width: 220px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  .promo h2 {
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  .promo a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #222;
+    color: #ccc;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  .promo a:hover {
+    background: #333;
+  }
 
+  /* Products */
+  .products {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 18px;
+  }
+  .product {
+    background: #111;
+    padding: 18px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  .product img {
+    width: 100%;
+    border-radius: 6px;
+  }
+  .product h3 {
+    margin: 10px 0 6px;
+    color: #ccc;
+  }
+  .product p {
+    color: #ccc;
+  }
 
+  /* Sections */
+  section {
+    padding: 30px 20px;
+  }
+  section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ccc;
+  }
+  section p {
+    text-align: center;
+    color: #ccc;
+  }
 
+  /* Footer */
+  footer {
+    background-color: #111;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 0.87em;
+    color: #ccc;
+  }
+</style>
+</head>
+<body>
 
+<header>
+  <a href="#" class="logo">Kanji Fightwear</a>
+  <nav>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
+<section class="hero">
+  <div>
+    <h1>Gear Up for Battle</h1>
+    <a href="#shop">Shop Now</a>
+  </div>
+</section>
 
+<section class="promo-section">
+  <div class="promo">
+    <h2>NEW ARRIVALS</h2>
+    <a href="#shop">Explore</a>
+  </div>
+  <div class="promo">
+    <h2>SALE</h2>
+    <a href="#shop">Shop Deals</a>
+  </div>
+  <div class="promo">
+    <h2>FEATURED GEAR</h2>
+    <a href="#shop">View All</a>
+  </div>
+</section>
+
+<section id="shop" class="products">
+  <div class="product">
+    <img src="https://via.placeholder.com/300x300.png?text=BJJ+Gi" alt="BJJ Gi">
+    <h3>BJJ Gi – Black</h3>
+    <p>£69.99</p>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/300x300.png?text=No-Gi+Set" alt="No Gi Set">
+    <h3>No‑Gi Set</h3>
+    <p>£49.99</p>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/300x300.png?text=Hoodie" alt="Kanji Hoodie">
+    <h3>Kanji Hoodie</h3>
+    <p>£39.99</p>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Kanji Fightwear</h2>
+  <p>Inspired by combat traditions and designed for modern fighters. We bring quality gear that’s built to last and looks elite.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: info@kanjifightwear.com</p>
+</section>
+
+<footer>
+  © 2026 Kanji Fightwear — Crafted for Fighters
+</footer>
+
+</body>
+</html>
